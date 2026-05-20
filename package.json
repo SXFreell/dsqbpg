@@ -1,0 +1,33 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bunx tailwindcss -i ./src/globals.css -o ./src/index.css && bun --hot src/index.ts",
+    "dev:css": "bunx tailwindcss -i ./src/globals.css -o ./src/index.css --watch",
+    "build": "bunx tailwindcss -i ./src/globals.css -o ./src/index.css --minify && bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
+    "start": "NODE_ENV=production bun src/index.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-separator": "^1.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-router-dom": "^7.15.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "3",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
