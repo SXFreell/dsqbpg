@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { Home, Zap } from "lucide-react";
+import { Home, Zap, Calculator, Grid3X3 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { to: "/", label: "Home", icon: Home },
   { to: "/api-tester", label: "API Tester", icon: Zap },
+  { to: "/calculator", label: "计算器", icon: Calculator },
+  { to: "/blueprint", label: "蓝图", icon: Grid3X3 },
 ];
 
 export function Layout() {

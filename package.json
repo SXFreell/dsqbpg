@@ -15,7 +15,9 @@
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "javascript-lp-solver": "^1.0.3",
     "lucide-react": "^1.16.0",
+    "pako": "^2.1.0",
     "react": "^19",
     "react-dom": "^19",
     "react-router-dom": "^7.15.1",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/pako": "^2.0.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.5.0",
